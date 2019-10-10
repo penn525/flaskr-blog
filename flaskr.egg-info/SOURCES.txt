@@ -1,9 +1,12 @@
 MANIFEST.in
+README.md
 setup.py
 flaskr/__init__.py
 flaskr/auth.py
 flaskr/blog.py
+flaskr/database.py
 flaskr/db.py
+flaskr/models.py
 flaskr/schema.sql
 flaskr.egg-info/PKG-INFO
 flaskr.egg-info/SOURCES.txt
@@ -18,3 +21,4 @@ flaskr/templates/auth/register.html
 flaskr/templates/blog/create.html
 flaskr/templates/blog/index.html
 flaskr/templates/blog/update.html
+flaskr/templates/error/csrf_error.html
